@@ -96,24 +96,7 @@ Certifique-se de ter instalado:
 
 ---
 
-## 📝 **Roadmap**
-
-- [ ] Implementação completa dos RFs;
-- [ ] Testes unitários e de integração;
-- [ ] Configuração de deploy automático.
-
----
-
 ## 📚 **Contribuindo**
 
 Contribuições são bem-vindas! Por favor, envie suas sugestões e melhorias por meio de issues ou pull requests.
 
----
-
-## 🖊 **Licença**
-
-Este projeto é licenciado sob a **[MIT License](LICENSE)**.
-
----
-
-Com isso, seu README está mais visual e informativo! Se precisar de ajuda com imagens personalizadas ou ajustes, é só avisar. 😊
