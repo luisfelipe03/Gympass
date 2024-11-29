@@ -10,7 +10,7 @@ Este projeto é uma aplicação de backend que simula funcionalidades de um sist
 
 ### ✅ **Requisitos Funcionais (RFs)**
 
-- [ ] Cadastro de usuários;
+- [X] Cadastro de usuários;
 - [ ] Autenticação de usuários;
 - [ ] Obtenção do perfil do usuário logado;
 - [ ] Visualização do número de check-ins realizados pelo usuário logado;
@@ -23,7 +23,7 @@ Este projeto é uma aplicação de backend que simula funcionalidades de um sist
 
 ### 🔐 **Regras de Negócio (RNs)**
 
-- [ ] E-mail do usuário deve ser válido e único;
+- [X] E-mail do usuário deve ser válido e único;
 - [ ] Não é permitido realizar dois check-ins no mesmo dia;
 - [ ] Check-in permitido apenas dentro de um raio de 100m da academia;
 - [ ] Check-in válido por até 20 minutos após a criação;
@@ -32,8 +32,8 @@ Este projeto é uma aplicação de backend que simula funcionalidades de um sist
 
 ### 🛠 **Requisitos Não Funcionais (RNFs)**
 
-- [ ] Senhas armazenadas de forma criptografada;
-- [ ] Persistência de dados utilizando **PostgreSQL**;
+- [X] Senhas armazenadas de forma criptografada;
+- [X] Persistência de dados utilizando **PostgreSQL**;
 - [ ] Paginação com 20 itens por página;
 - [ ] Autenticação baseada em **JWT**.
 
