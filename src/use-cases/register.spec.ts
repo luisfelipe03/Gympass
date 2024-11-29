@@ -1,8 +1,7 @@
 import { describe } from "node:test";
 import { expect, it } from "vitest";
 import { RegisterUserUseCase } from "./register";
-import { PrismaUsersRepository } from "@/repositories/prisma/prisma-users-repository";
-import { compare } from "bcryptjs";
+import bcrypt from "bcrypt";
 import { InMemoryUserRepository } from "@/repositories/in-memory/in-memory-users-repository";
 import { EmailAlreadyExistsError } from "./errors/email-already-exists";
 
@@ -33,7 +32,7 @@ describe("Register Use Case", () => {
             password: "password",
         });
 
-        const isPasswordCorrectlyHashed = await compare("password", user.password_hash);
+        const isPasswordCorrectlyHashed = await bcrypt.compare("password", user.password_hash);
 
         expect(isPasswordCorrectlyHashed).toBe(true);
 
