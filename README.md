@@ -19,13 +19,13 @@ Este projeto é uma aplicação de backend que simula funcionalidades de um sist
 - [ ] Busca de academias pelo nome;
 - [x] Realização de check-in em uma academia;
 - [ ] Validação de check-in (admin);
-- [ ] Cadastro de academias (admin).
+- [x] Cadastro de academias (admin).
 
 ### 🔐 **Regras de Negócio (RNs)**
 
 - [x] E-mail do usuário deve ser válido e único;
-- [ ] Não é permitido realizar dois check-ins no mesmo dia;
-- [ ] Check-in permitido apenas dentro de um raio de 100m da academia;
+- [x] Não é permitido realizar dois check-ins no mesmo dia;
+- [x] Check-in permitido apenas dentro de um raio de 100m da academia;
 - [ ] Check-in válido por até 20 minutos após a criação;
 - [ ] Apenas administradores podem validar check-ins;
 - [ ] Apenas administradores podem cadastrar academias.
