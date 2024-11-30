@@ -23,5 +23,9 @@ export class InMemoryUserRepository implements UsersRepository {
     async findByEmail(email: string) {
         return this.items.find(user => user.email === email) ?? null;
     }
+
+    async findById(id: string) {
+        return this.items.find(user => user.id === id) ?? null;
+    }
     
 }
