@@ -1,8 +1,6 @@
 import {  beforeEach, describe, expect, it, vi } from "vitest";
 import { InMemoryCheckInsRepository } from "@/repositories/in-memory/in-memory-check-ins-repository";
 import { FetchUserCheckInsHistoryUseCase } from "./fetch-user-check-ins-history";
-import { g } from "vitest/dist/chunks/suite.B2jumIFP";
-import { execPath } from "process";
 
 let checkInsRepository: InMemoryCheckInsRepository;
 let sut: FetchUserCheckInsHistoryUseCase;

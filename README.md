@@ -13,7 +13,7 @@ Este projeto é uma aplicação de backend que simula funcionalidades de um sist
 - [x] Cadastro de usuários;
 - [x] Autenticação de usuários;
 - [x] Obtenção do perfil do usuário logado;
-- [ ] Visualização do número de check-ins realizados pelo usuário logado;
+- [x] Visualização do número de check-ins realizados pelo usuário logado;
 - [x] Histórico de check-ins do usuário;
 - [ ] Busca de academias próximas;
 - [ ] Busca de academias pelo nome;
