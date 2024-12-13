@@ -14,7 +14,7 @@ Este projeto é uma aplicação de backend que simula funcionalidades de um sist
 - [x] Autenticação de usuários;
 - [x] Obtenção do perfil do usuário logado;
 - [ ] Visualização do número de check-ins realizados pelo usuário logado;
-- [ ] Histórico de check-ins do usuário;
+- [x] Histórico de check-ins do usuário;
 - [ ] Busca de academias próximas;
 - [ ] Busca de academias pelo nome;
 - [x] Realização de check-in em uma academia;
@@ -34,7 +34,7 @@ Este projeto é uma aplicação de backend que simula funcionalidades de um sist
 
 - [x] Senhas armazenadas de forma criptografada;
 - [x] Persistência de dados utilizando **PostgreSQL**;
-- [ ] Paginação com 20 itens por página;
+- [x] Paginação com 20 itens por página;
 - [ ] Autenticação baseada em **JWT**.
 
 ---
