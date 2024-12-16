@@ -16,7 +16,7 @@ Este projeto é uma aplicação de backend que simula funcionalidades de um sist
 - [x] Visualização do número de check-ins realizados pelo usuário logado;
 - [x] Histórico de check-ins do usuário;
 - [ ] Busca de academias próximas;
-- [ ] Busca de academias pelo nome;
+- [x] Busca de academias pelo nome;
 - [x] Realização de check-in em uma academia;
 - [ ] Validação de check-in (admin);
 - [x] Cadastro de academias (admin).

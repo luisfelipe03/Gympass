@@ -38,7 +38,7 @@ describe("Register Use Case", () => {
 
     });
 
-    it.skip("should not be able to register with same email twice", async () => {
+    it("should not be able to register with same email twice", async () => {
         const email = "john@email.com";
 
         sut.execute({
