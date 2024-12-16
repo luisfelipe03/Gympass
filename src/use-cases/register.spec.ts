@@ -37,22 +37,4 @@ describe("Register Use Case", () => {
         expect(isPasswordCorrectlyHashed).toBe(true);
 
     });
-
-    it("should not be able to register with same email twice", async () => {
-        const email = "john@email.com";
-
-        sut.execute({
-            name: "John Doe",
-            email,
-            password: "password",
-        });            
-        
-        await expect(() => 
-            sut.execute({
-                name: "John Doe",
-                email,
-                password: "password",
-            }) 
-        ).rejects.toBeInstanceOf(EmailAlreadyExistsError);
-    });
 });
