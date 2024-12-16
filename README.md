@@ -26,7 +26,7 @@ Este projeto é uma aplicação de backend que simula funcionalidades de um sist
 - [x] E-mail do usuário deve ser válido e único;
 - [x] Não é permitido realizar dois check-ins no mesmo dia;
 - [x] Check-in permitido apenas dentro de um raio de 100m da academia;
-- [ ] Check-in válido por até 20 minutos após a criação;
+- [x] Check-in válido por até 20 minutos após a criação;
 - [ ] Apenas administradores podem validar check-ins;
 - [ ] Apenas administradores podem cadastrar academias.
 
