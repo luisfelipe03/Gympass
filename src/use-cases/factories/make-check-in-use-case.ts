@@ -5,7 +5,7 @@ import { InMemoryGymsRepository } from "@/repositories/in-memory/in-memory-gyms-
 export function makeCheckInUseCase(): CheckInUseCase {
     const checkInsRepository = new InMemoryCheckInsRepository();
     const gymsRepository = new InMemoryGymsRepository();
-    const checkInUseCase = new CheckInUseCase(checkInsRepository, gymsRepository);
+    const useCase = new CheckInUseCase(checkInsRepository, gymsRepository);
 
-    return checkInUseCase;
+    return useCase;
 } 

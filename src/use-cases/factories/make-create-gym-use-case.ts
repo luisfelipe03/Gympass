@@ -3,7 +3,7 @@ import { CreateGymUseCase } from "../create-gym";
 
 export function makeRegisterUseCase(): CreateGymUseCase {
     const gymRepository = new InMemoryGymsRepository();
-    const createGymUseCase = new CreateGymUseCase(gymRepository);
+    const useCase = new CreateGymUseCase(gymRepository);
 
-    return createGymUseCase;
+    return useCase;
 }
