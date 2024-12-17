@@ -18,8 +18,18 @@ export class PrismaGymsRepository implements GymsRepository {
         longitude,
     }: FindManyNearbyParams): Promise<Gym[]> {
         const gyms = await prisma.$queryRaw<Gym[]>`
-            SELECT  * FROM gyms
-            WHERE (6371 * ACOS(
+            SELECT 
+                *, 
+                (6371 * ACOS(
+                    COS(RADIANS(${latitude})) 
+                    * COS(RADIANS(latitude)) 
+                    * COS(RADIANS(longitude) - RADIANS(${longitude})) 
+                    + SIN(RADIANS(${latitude})) 
+                    * SIN(RADIANS(latitude))
+                )) AS distancia 
+            FROM gyms
+            WHERE 
+                (6371 * ACOS(
                     COS(RADIANS(${latitude})) 
                     * COS(RADIANS(latitude)) 
                     * COS(RADIANS(longitude) - RADIANS(${longitude})) 
@@ -27,7 +37,8 @@ export class PrismaGymsRepository implements GymsRepository {
                     * SIN(RADIANS(latitude))
                 )) <= 10
             ORDER BY distancia ASC;
-        `;
+
+                    `;
 
         return gyms;
     }
